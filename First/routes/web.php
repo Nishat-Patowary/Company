@@ -7,19 +7,19 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    echo "This is about page";
+    return view("about");
 });
 
 Route::get('/contact', function () {
-echo "This is contact page";
+   return view("contact");
 });
 
 Route::get('/blog', function () {
-    return view('welcome');
+    return view('blog');
 });
 
 
 Route::get('/protfolio', function () {
-    return view('welcome');
+    return view('protfolio');
 });
 
