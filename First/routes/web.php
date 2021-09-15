@@ -7,9 +7,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function () {
+    echo "This is home page";
+});
 Route::get('/about', function () {
     return view("about");
-});
+})->middleware("Chek");
 
 Route::get('/blog', function () {
     return view('blog');
