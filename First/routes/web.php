@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use app\http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -8,10 +9,6 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     return view("about");
-});
-
-Route::get('/contact', function () {
-   return view("contact");
 });
 
 Route::get('/blog', function () {
@@ -22,4 +19,6 @@ Route::get('/blog', function () {
 Route::get('/protfolio', function () {
     return view('protfolio');
 });
+
+Route::get("/contact", [ContactController::class, "index"]);
 
