@@ -12,7 +12,7 @@ Route::get('/home', function () {
 });
 Route::get('/about', function () {
     return view("about");
-})->middleware("Check");
+});
 
 Route::get('/blog', function () {
     return view('blog');
