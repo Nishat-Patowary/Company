@@ -23,5 +23,7 @@ Route::get('/protfolio', function () {
     return view('protfolio');
 });
 
-Route::get("/contact", [ContactController::class, "index"]);
 
+Route::get('/contact', function () {
+    return view("contact");
+});
