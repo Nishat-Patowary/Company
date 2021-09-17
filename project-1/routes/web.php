@@ -27,3 +27,7 @@ Route::get('/protfolio', function () {
 Route::get('/contact', function () {
     return view("contact");
 });
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
