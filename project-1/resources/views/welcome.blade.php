@@ -40,8 +40,8 @@
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
              
                 </div>
-                <h1 style="color:red">Dashboard page</h1>
-                <a href="{{ url("/") }}">Dashboard</a>
+                <h1 style="color:red">Home page</h1>
+                <a href="{{ url("/") }}">Home</a>
                 <a href="{{ URL::to("/about") }}">About</a>
                 <a href="{{ URL::to("/protfolio") }}">Protfolio</a>
                 <a href="{{ URL::to("/contact") }}">Contact</a>
