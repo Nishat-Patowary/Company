@@ -16,6 +16,9 @@
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
 
+                    <x-jet-nav-link href="" >
+                       All category
+                    </x-jet-nav-link>
                 </div>
             </div>
 
