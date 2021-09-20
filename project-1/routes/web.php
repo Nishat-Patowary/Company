@@ -30,6 +30,9 @@ Route::get('/contact', function () {
     return view("contact");
 });
 
+//category coltroller
+
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     $users = User::all();
     $users= DB::table("users")->get();
