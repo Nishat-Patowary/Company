@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use app\http\Controllers\ContactController;
+use app\http\Controllers\CategoryController;
+
 use app\Models\user;
 use Illuminate\Support\Facades\DB;
 
@@ -31,6 +33,7 @@ Route::get('/contact', function () {
 });
 
 //category coltroller
+Route::get("/category/all", [ContactController::class, "Allcat"])->name("all.category");
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
